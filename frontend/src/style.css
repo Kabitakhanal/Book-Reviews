@@ -1,0 +1,190 @@
+.App {
+    padding: 0px ;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #4caf50;
+     /* Navbar background color */
+}
+
+.navbar .left h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff; /* Title color */
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+}
+
+.navbar .middle input[type="text"] {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    background-color: #f5f5f5; 
+    font-family: 'Poppins';/* Input background color */
+}
+
+.navbar .right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .right select {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5; /* Input background color */
+    color: #333; /* Dropdown text color */
+    cursor: pointer;
+    font-family: 'Poppins';
+}
+
+.navbar .right button {
+    margin-left: 10px;
+    padding: 10px 20px; /* Adjusted button padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #ffae00; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Poppins';
+}
+
+.navbar .right button:hover {
+    background-color: #000000; /* Button hover background color */
+}
+
+/* Remove underline from link */
+.navbar .right a {
+    text-decoration: none;
+    color: #fff; /* Link color */
+    font-family: 'Poppins';
+}
+
+/* Change color on hover */
+.navbar .right a:hover {
+    color: #e1aa1f; /* Link hover color */
+    color: white;
+    font-family: 'Poppins';
+}
+
+
+.books {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+.book {
+    flex-basis: calc(25% - 20px); /* Smaller card size */
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif; /* Changed font to Poppins */
+}
+.book:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+}
+
+.book h2 {
+    margin-top: 0;
+    font-size: 18px; /* Adjusted font size */
+}
+
+.book p {
+    margin: 5px 0;
+    font-size: 14px; /* Adjusted font size */
+}
+
+.book:hover p {
+    overflow: visible;
+    white-space: normal;
+    height: auto;
+    line-height: normal;
+}
+
+.book span {
+    margin-top: 2rem;
+    font-size: 16px; /* Adjusted font size */
+    color: #ffae00; /* Genre color */
+}
+.book .genre{
+
+    padding: 3px;
+    background-color: #ffae00;
+    border: 3rem #ffae00 ;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+.book .rating {
+    display: inline-block;
+    margin-left: 5px; /* Added space between genre and rating */
+    font-size: 16px; /* Adjusted font size */
+}
+
+.book .rating::after {
+    content: " ★"; /* Added star after rating */
+}
+
+.book button {
+    margin-top: 10px; /* Adjusted margin */
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px; /* Adjusted padding */
+    border-radius: 5px;
+    background-color: #4caf50; /* Button background color */
+    color: white;
+    font-family: 'Poppins', sans-serif; /* Changed font to Poppins */
+    transition: background-color 0.3s ease-in-out; /* Added button effect */
+}
+
+.book button:hover {
+    background-color: #0d120d; /* Button hover background color */
+}
+
+.book .actions {
+    margin-top: 10px; /* Added gap between buttons */
+}
+
+.book .delete {
+    background-color: #f44336; /* Delete button color */
+    margin-right: 10px; /* Added gap between buttons */
+}
+
+
+.actions .update {
+  background-color: #4ccd52;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .book {
+      flex-basis: calc(50% - 40px); /* Adjusted card size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .book {
+      flex-basis: calc(100% - 40px); /* Adjusted card size for mobile screens */
+  }
+}
+
